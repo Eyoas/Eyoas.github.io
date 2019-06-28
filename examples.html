@@ -10,12 +10,12 @@
 </head>
 
 <body>
-  <div id="main">
-    <div id="header">
+  <div id="main_proj">
+    <div id="header_proj">
       <div id="logo">
         <div id="logo_text">
           <h1><a href="index.html">Architectural<span class="logo_colour">portfolio</span></a></h1>
-          <h2>Simple. Creative. Stylish.                                      . . . .       Eyoas Teketel</h2>
+          <h2>Simple. Creative. Stylish.  . . . .       Eyoas Teketel</h2>
         </div>
       </div>
       <div id="menubar">
@@ -23,14 +23,14 @@
           <li><a href="index.html">Home</a></li>
           <li class="selected"><a href="examples.html">Projects</a></li>
           <li><a href="page.html">Exercise</a></li>
-          <li><a href="another_page.html">Another Page</a></li>
+          <li><a href="another_page.html">Extracurricular</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
     <div id="content_header"></div>
     <div id="site_content">
-      <div id="sidebar_container">
+      <div id="sidebar_container_proj">
         <div class="sidebar">
           <div class="sidebar_top"></div>
           <div class="sidebar_item">
@@ -59,86 +59,148 @@
           
         </div>
       </div>
+      <div id="slide"><!-- Slideshow container -->
+        <div class="slideshow-container">
+          <span class="h9"><strong>Some highlights of the school projects I've done.</strong></span>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="museum2.jpg" style="width:600px">
+            <div class="slidetext">Menelik II Museum</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="apartment.jpg" style="width:600px">
+            <div class="slidetext">Apartment, Gola</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="cinema.JPG" style="width:600px" >
+            <div class="slidetext">Cinema Ethiopia Redesign</div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="apartment2.jpg" style="width:600px">
+              <div class="slidetext">Apartment, Gola</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 /6</div>
+                <img src="museum.jpg" style="width:600px">
+                <div class="slidetext">Menelik II Museum</div>
+              </div>
+        
+              <div class="mySlides fade">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="cinema2.JPG" style="width:600px">
+                  <div class="slidetext">Cinema Ethiopia Redesign</div>
+                </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div></div>
+      <div id="main_portfolio">
+
+
+          <div class="column">
+              <div><Span class="h9">School Projects</Span>
+              <span class="imgWrap_landscape">                
+                  <a href="Cinema.html"></a><img src="cinema.jpg" class="image_landscape" alt="la diplomate">
+                  <p class="imgDescription"><br>Cinema Ethiopia<br>— <br>
+                  <span class="short_Description">A redesign project that focuses on the massing of the building. Also intervenes on the urban landscape of the surrounding.
+                  </span>
+                  </p></a>
+                  </span>
+          </div>
+          <div class="column">
+
+              <span class="imgWrap_landscape">                
+                  <a href="Cinema.html"></a><img src="apartment.jpg" class="image_landscape" alt="la diplomate">
+                  <p class="imgDescription"><br>Apartment<br>— <br>
+                  <span class="short_Description">Community housing in Gola sefer, Addis Ababa based up on deep analysis of the identity of the "sefer"
+                  </span>
+                  </p></a>
+                  </span>
+          </div>
+
+          <div class="column">
+
+              <span class="imgWrap_landscape">                
+                  <a href="museum.html"></a><img src="museum2.jpg" class="image_landscape" alt="la diplomate">
+                  <p class="imgDescription"><br>Historical museum<br>— <br>
+                  <span class="short_Description">The design of a museum dedicated to Menelik II
+                  </span>
+                  </p></a>
+                  </span>
+          </div>
+          <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
           
       </div>     
                 
-       <!-- column 3 -->
       
       </div> 
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Examples</h1>
-        <p>This page contains examples of all the styled elements available as part of this design. Use this page for reference, whilst you build your website.</p>
-        <h2>Headings</h2>
-        <p>These are the different heading formats:</p>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <h2>Text</h2>
-        <p>The following examples show how the text (within '&lt;p&gt;&lt;/p&gt;' tags) will appear:</p>
-        <p><strong>This is an example of bold text</strong></p>
-        <p><i>This is an example of italic text</i></p>
-        <p><a href="#">This is a hyperlink</a></p>
-        <h2>Lists</h2>
-        <p>This is an unordered list:</p>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ul>
-        <p>This is an ordered list:</p>
-        <ol>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ol>
-        <h2>Images</h2>
-        <p>images can be placed on the left, in the center or on the right:</p>
-        <span class="left"><img src="style/graphic.png" alt="example graphic" /></span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum.
-        </p>
-        <span class="center"><img src="style/graphic.png" alt="example graphic" /></span>
-        <span class="right"><img src="style/graphic.png" alt="example graphic" /></span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-        </p>
-        <h2>Tables</h2>
-        <p>Tables should be used to display data and not used for laying out your website:</p>
+              
+       <!-- insert the page content here -->
+      </div>
+      <div id="table">
         <table style="width:100%; border-spacing:0;">
-          <tr><th>Item</th><th>Description</th></tr>
-          <tr><td>Item 1</td><td>Description of Item 1</td></tr>
-          <tr><td>Item 2</td><td>Description of Item 2</td></tr>
-          <tr><td>Item 3</td><td>Description of Item 3</td></tr>
-          <tr><td>Item 4</td><td>Description of Item 4</td></tr>
+          <tr><th>Project</th><th>Description</th></tr>
+          <tr><td>Cinema Redesign</td><td>Redesign project focused on the massing of Cinema Ethiopia</td></tr>
+          <tr><td>Apartment</td><td>Community housing in Gola sefer, Addis Ababa</td></tr>
+          <tr><td>Historical Museum</td><td>The design of a museum dedicated to Menelik II</td></tr>
         </table>
-        <h2>Form Elements</h2>
-        <form action="#" method="post">
+        
+        <!-- <form action="#" method="post"> -->
           <div class="form_settings">
-            <p><span>Form field example</span><input type="text" name="name" value="" /></p>
-            <p><span>Textarea example</span><textarea rows="8" cols="50" name="name"></textarea></p>
-            <p><span>Checkbox example</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
-            <p><span>Dropdown list example</span><select id="id" name="name"><option value="1">Example 1</option><option value="2">Example 2</option></select></p>
-            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="button" /></p>
+            
+            <p><span>Checkbox</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
+            <p><span>Experience on the site</span><select id="id" name="name"><option value="1"> Good</option><option value="2">Needs improvement</option></select></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="submit" /> </p>
           </div>
         </form>
       </div>
     </div>
     <div id="content_footer"></div>
     <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="examples.html">Projects</a> | <a href="page.html">Exercise</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact</a></p>
+      <p><a href="index.html">Home</a> | <a href="examples.html">Projects</a> | <a href="page.html">Exercise</a> | <a href="another_page.html">Extracurricular</a> | <a href="contact.html">Contact</a></p>
     </div>
   </div>
 </body>
