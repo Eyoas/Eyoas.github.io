@@ -688,8 +688,8 @@ margin-bottom:30px;
 #table{
     width:750px;
     height:auto;
-    margin-left:200px;
-    padding-left:250px;
+    margin-left:60px;
+    padding-left:80px;
     padding-top: 2px;
     Padding-bottom:100px;
     margin-bottom:50px;
@@ -727,6 +727,11 @@ margin-bottom:30px;
   padding: 0 0 5px 0;
   font-size:25px;
 }
+.sm_tt{color: #362C20;
+    letter-spacing: 0em;
+    padding:2px;
+    float:left;
+    font-size:25px;}
 
 
 .fade {
