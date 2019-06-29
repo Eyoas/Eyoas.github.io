@@ -62,7 +62,7 @@ h5, h6
 
 a, a:hover
 { outline: none;
-  text-decoration: underline;
+  opacity:0.85;
   color: #B48A7C;}
 
 a:hover
@@ -617,7 +617,7 @@ box-sizing:border-box;
 .imgWrap_landscape {
     display: inline-block;
 	position: relative;
-	width: 850px;
+	width: 830px;
 	height: 476px;
     background-color:#5E4238;
     -moz-transition: all 0.3s linear;
@@ -644,6 +644,11 @@ box-sizing:border-box;
     -o-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    opacity:1;
+transition:.7s;
+padding-top:40px;
+padding-bottom:30px;
+margin-bottom:30px;
 }
 
 img:hover, .imgWrap_landscape:hover img {
@@ -653,6 +658,11 @@ img:hover, .imgWrap_landscape:hover img {
     -o-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    opacity:1;
+transition:.7s;
+padding-top:40px;
+padding-bottom:30px;
+margin-bottom:30px;
 }
 
 .imgWrap_landscape:hover .imgDescription {
@@ -698,12 +708,16 @@ img:hover, .imgWrap_landscape:hover img {
   }
 
   .short_Description{
-	font-size:15px;
+      padding-right:80px;
+    font-size:17px;
+    color:rgb(194, 152, 137);
 }
 .assign{
     font-size: 25px;
     color:#5E4238;
-    padding:10px;
+    padding-left:40px;
+    margin-top: 10px;
+    padding-top:80px;
 }
 
 .h9{
