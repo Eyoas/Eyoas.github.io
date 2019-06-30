@@ -657,7 +657,7 @@ box-sizing:border-box;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-bottom:12px;
-    box-shadow: 2px 2px 25px 25px #00000030;
+    box-shadow:7px 5px #99999930;
 }
 
 .imgWrap_landscape img {
