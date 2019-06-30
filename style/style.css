@@ -130,16 +130,12 @@ ol li
     margin-left:auto;
 }
 
-#header_proj
-{ background: #000;
-  border-bottom: 1px solid #3d3d3d;
-  height: 186px;}
   
   #header
 { background: #000;
   border-bottom: 1px solid #3d3d3d;
   height: 186px;
-width:100%}
+  width:100%}
   
 #banner
 {  background: transparent url(Banner_jo.jpg) no-repeat;
@@ -160,19 +156,35 @@ width:100%}
   position: relative;
   height: 140px;
   background: #1d1d1d;
-  opacity:.5;}
+  opacity:.85;}
   #logo_text {
     width: 1050px;
   }
-#port{height: 100%;
+#port{width:200px;
+      height:200px;
+      background-image:url(port.png);
       float:right;
-      opacity:0.5
+      margin-top: -140px;
+      opacity:0.5;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
 }
-#port:hover{height: 100%;
+#port:hover{height: 200px;
+            width:200px;
             float:right;
             opacity:0.95;
-
+            padding-top:-40px;
+padding-bottom:-30px;
+margin-bottom:-30px;
+            background-image:url(port.jpg);
+            
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            
   }
+  
 
   
 #logo #logo_text 
@@ -686,10 +698,9 @@ img:hover, .imgWrap_landscape:hover img {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     opacity:1;
-transition:.7s;
-padding-top:40px;
-padding-bottom:30px;
-margin-bottom:30px;
+    transition:.7s;
+    padding-left:40px;
+     margin-left:30px;
 }
 
 .imgWrap_landscape:hover .imgDescription {
