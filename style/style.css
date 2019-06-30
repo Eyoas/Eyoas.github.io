@@ -161,10 +161,12 @@ ol li
     width: 1050px;
   }
 #port{width:200px;
+      opacity:0;
       height:200px;
       background-image:url(port.png);
       float:right;
       margin-top: -140px;
+      margin-right:-230px;
       opacity:0.5;
       -o-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
@@ -173,10 +175,9 @@ ol li
 #port:hover{height: 200px;
             width:200px;
             float:right;
-            opacity:0.95;
-            padding-top:-40px;
-padding-bottom:-30px;
-margin-bottom:-30px;
+            margin-top: -140px;
+            margin-right:-230px;
+            opacity:0.95;          
             background-image:url(port.jpg);
             
             -o-transition: all 0.3s ease;
@@ -699,8 +700,9 @@ img:hover, .imgWrap_landscape:hover img {
     transition: all 0.3s ease;
     opacity:1;
     transition:.7s;
-    padding-left:40px;
-     margin-left:30px;
+    padding-top:40px;
+  padding-bottom:30px;
+margin-bottom:30px;
 }
 
 .imgWrap_landscape:hover .imgDescription {
