@@ -17,7 +17,8 @@ body
 
 p
 { padding: 0 0 20px 0;
-  line-height: 1.7em;}
+  line-height: 1.7em;
+font-size:120%;}
 
 img
 { border: 0;}
@@ -28,7 +29,7 @@ h1, h2, h3, h4, h5, h6
   padding: 0 0 5px 0;}
 
 h1, h2, h3
-{ font: normal 170% 'century gothic', arial;
+{ font: normal 220% 'century gothic', arial;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
   color: #000;}
@@ -137,7 +138,8 @@ ol li
   #header
 { background: #000;
   border-bottom: 1px solid #3d3d3d;
-  height: 186px;}
+  height: 186px;
+width:100%}
   
 #banner
 {  background: transparent url(Banner_jo.jpg) no-repeat;
@@ -154,10 +156,13 @@ ol li
     border: 10px solid #DDD;}
 
 #logo
-{ width: 880px;
+{ width: 1259px;
   position: relative;
   height: 140px;
   background: #1d1d1d;}
+  #logo_text {
+    width: 1050px;
+  }
 
 #logo #logo_text 
 { position: absolute; 
@@ -188,7 +193,7 @@ ol li
   color: #B48A7C;}
 
 #menubar
-{ width: 872px;
+{ width: 1250px;
   height: 45px;
   padding-right: 8px;
   background: #2D2D2D;
@@ -231,14 +236,11 @@ ul#menu li a:hover
 { color: #B48A7C;}
 
 #site_content
-{ width: 880px;
+{ width:1259px;
   overflow: hidden;
   margin: 20px auto 0 auto;
   padding: 0 0 10px 0;} 
 
-#sidebar_container_proj
-{ float: left;
-  width: 224px;}
   #sidebar_container
 { float: left;
   width: 224px;}
@@ -272,9 +274,9 @@ ul#menu li a:hover
 
 #content
 { text-align: left;
-  width: 620px;
-  padding: 0 0 0 5px;
-  float: right;}
+  width: 850px;
+  padding:0 0 0 70px;
+  float: left;}
   
 #content ul
 { margin: 2px 0 22px 0px;}
@@ -468,25 +470,20 @@ button{
     position: relative;
     color: white;
     font-size: 20px;
-    background:gray;
+    background:lightgray;
     border:none;
     outline: none;
     left: 0%;
     width: 220px;
     text-align: left;
+    -moz-transition: 0.8s;
 }
 button:hover{
-fill: whitesmoke;
+  cursor:pointer;
+fill: rgb(161, 151, 151);
+background:gray;
 }
-#sidebar{
-text-align: left;
-float:right;
-width:30%;
-background:none;
-color:#fff;
-padding-right:500px;
-box-sizing:border-box;
-}
+
 #vid{
     background: transparent ;
     display: block;
@@ -535,14 +532,14 @@ box-sizing:border-box;
     margin:200px; 
     padding-left:50px;
 }
-#Bubblebody{background: rgb(238, 225, 225) ;
+/* #Bubblebody{background: rgb(238, 225, 225) ;
     float:left;
 width:750px;
 color:#fff;
 padding-top:70px;
 padding-left:100px;
 box-sizing:border-box;
-}
+} */
 
 
 
@@ -634,7 +631,7 @@ box-sizing:border-box;
 .imgWrap_landscape {
     display: inline-block;
 	position: relative;
-	width: 830px;
+	width: 850px;
 	height: 476px;
     background-color:#5E4238;
     -moz-transition: all 0.3s ease;
@@ -734,8 +731,9 @@ margin-bottom:30px;
     font-size: 25px;
     color:#5E4238;
     padding-left:40px;
-    margin-top: 10px;
-    padding-top:80px;
+    margin:50;
+    margin-top: 50px;
+    padding-top:1px;
 }
 
 .h9{
@@ -749,7 +747,7 @@ margin-bottom:30px;
     padding-top:80px;
     padding-bottom:40px;
     float:left;
-    font-size:35px;}
+    font-size:170%;}
  .extra{
         opacity:.85;
         transition:.7s;
@@ -770,43 +768,13 @@ margin-bottom:30px;
     /* AUTOMATIC SLIDESHOW*/
 
 
-
-
-    .mySlides {display: none}
+    .mySlides {display: none;}
     img {vertical-align: middle;}
-    
-    /* Slideshow container */
+
     .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
+      max-width: 600px;
+      position: top;
+      margin: 2px;
     }
     
     /* Caption text */
@@ -831,9 +799,8 @@ margin-bottom:30px;
     
     /* The dots/bullets/indicators */
     .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
+      height: 10px;
+      width: 10px;
       margin: 0 2px;
       background-color: #bbb;
       border-radius: 50%;
@@ -841,7 +808,7 @@ margin-bottom:30px;
       transition: background-color 0.6s ease;
     }
     
-    .active, .dot:hover {
+    .active {
       background-color: #717171;
     }
     
@@ -863,10 +830,6 @@ margin-bottom:30px;
       to {opacity: 1}
     }
     
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .prev, .next,.text {font-size: 11px}
-    }
 
     #iframe{float:center;
      width:600px;
