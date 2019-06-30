@@ -165,7 +165,7 @@ ol li
       height:200px;
       background-image:url(port.png);
       float:right;
-      margin-top: -140px;
+      margin-top: -172px;
       margin-right:-230px;
       opacity:0.5;
       -o-transition: all 0.3s ease;
@@ -175,7 +175,7 @@ ol li
 #port:hover{height: 200px;
             width:200px;
             float:right;
-            margin-top: -140px;
+            margin-top: -172px;
             margin-right:-230px;
             opacity:0.95;          
             background-image:url(port.jpg);
@@ -557,14 +557,6 @@ box-sizing:border-box;
     margin:200px; 
     padding-left:50px;
 }
-/* #Bubblebody{background: rgb(238, 225, 225) ;
-    float:left;
-width:750px;
-color:#fff;
-padding-top:70px;
-padding-left:100px;
-box-sizing:border-box;
-} */
 
 
 
