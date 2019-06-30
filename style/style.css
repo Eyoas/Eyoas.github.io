@@ -163,7 +163,9 @@ width:100%}
   #logo_text {
     width: 1050px;
   }
+#port{height: 100%;}
 
+  
 #logo #logo_text 
 { position: absolute; 
   top: 10px;
