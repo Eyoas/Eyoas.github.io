@@ -138,18 +138,27 @@ ol li
   width:100%}
   
 #banner
-{  background: transparent url(Banner_jo.jpg) no-repeat;
-  width: 860px;
-  height: 180px;
+{  background: transparent url(Banner_jo.png) center no-repeat;
+  width: 1200px;
+  height: 251px;
   margin-bottom: 20px;
   border: 10px solid #DDD;
-    transition:0.5s cubic-bezier(0.23, 1, 0.320, 1) }
-  #banner:hover{  background: transparent url(Banner_jo.jpg) no-repeat;
-    width: 860px;
-    opacity:0.8;
-    height: 180px;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+  #banner:hover{  background: transparent url(banner_jo_surround.jpg) center no-repeat;
+    width: 1200px;
+    height: 251px;
+    opacity:0.93;
     margin-bottom: 20px;
-    border: 10px solid #DDD;}
+    border: 10px solid #DDD;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;}
 
 #logo
 { width: 1259px;
